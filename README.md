@@ -1,4 +1,4 @@
-**PROYEK WEBSITE PENDAFTARAN SISWA BARU**
+# PROYEK WEBSITE PENDAFTARAN SISWA BARU
 
 Project Mingguan
 Mata Pelajaran: Pemrograman Web  
