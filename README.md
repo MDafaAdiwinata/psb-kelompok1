@@ -61,7 +61,7 @@ Dengan antarmuka yang sederhana dan responsif, website ini dapat diakses melalui
 ---
 
 **Demo Website**
-> [Kunjungi Website nya disini!](https://mdafaadiwinata.github.io/psb-kelompok1/)
+> [Kunjungi Website nya disini!](https://mdafaadiwinata.github.io/psb-kelompok1)
 
 ---
 
