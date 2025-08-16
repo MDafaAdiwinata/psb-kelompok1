@@ -65,7 +65,7 @@ Dengan antarmuka yang sederhana dan responsif, website ini dapat diakses melalui
 
 ---
 
-## Catatan
-Untuk setiap kali merunning file project ini, selalu awali dengan menjalankan perintah di bawah ini di terminal (Git Bash/PowerShell/CMD) di dalam project* supaya customisasi TailwindCSS berjalan dan sesuai.
+> [!NOTE]
+> Untuk setiap kali merunning file project ini, selalu awali dengan menjalankan perintah di bawah ini di terminal (Git Bash/PowerShell/CMD) di dalam project* supaya customisasi TailwindCSS berjalan dan sesuai.
+<pre> ```npx @tailwindcss/cli -i ./input.css -o ./output.css --watch ``` </pre>
 
-npx @tailwindcss/cli -i ./input.css -o ./output.css --watch
