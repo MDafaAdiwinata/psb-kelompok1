@@ -56,8 +56,8 @@ ISI FORM CARD [TAMBAH DATA]:
   - Kuota Jalur
 
 4. DAFTAR DOKUMEN: 
-  - NIS 
-  - Jenis dokumen
-  - File_path
-  - Tanggal Upload
-  - Catatan (Opsional)
+  - NIS = number
+  - Jenis dokumen = text
+  - File_path = file
+  - Tanggal Upload = date
+  - Catatan (Opsional) = text

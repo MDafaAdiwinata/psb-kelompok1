@@ -140,10 +140,10 @@
                 <div
                     class="flex flex-col justify-center items-start p-6 lg:p-12 rounded-xl bg-[var(--bg-primary3)] border border-[var(--bg-primary2)]/30 shadow-md">
                     <h1 class="text-xl lg:text-4xl font-bold text-[var(--txt-primary)]">
-                        Daftar Kuota Jalur Pendaftaran
+                        Daftar Dokumen Pendaftaran
                     </h1>
                     <p class="text-lg lg:text-2xl text-[var(--txt-primary)] mt-0 lg:mt-2">
-                        List Kuota Jalur Pendaftaran yang Tersedia
+                        List Dokumen Pendaftaran yang Tersedia
                     </p>
                 </div>
                 <img src="../assets/img/img-greet-ds.png"
@@ -315,7 +315,7 @@
                     <div
                         class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-[var(--txt-primary)]/50">
                         <h3 class="text-xl font-semibold text-[var(--txt-primary)]">
-                            Tambah Data Kuota Jalur
+                            Tambah Data Dokumen
                         </h3>
                         <button type="button"
                             class="text-[var(--txt-primary)]/50 bg-transparent hover:bg-[var(--bg-primary2)]/20 hover:text-[var(--txt-primary)] rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center hover:cursor-pointer"
@@ -332,21 +332,45 @@
                     <div class="p-4 md:p-5 space-y-4">
                         <form class="w-full">
                             <div class="mb-4">
-                                <label for="namaJalur" class="block mb-2 text-lg font-medium text-[var(--txt-primary)]">
-                                    Nama Jalur:
+                                <label for="NIS" class="block mb-2 text-lg font-medium text-[var(--txt-primary)]">
+                                    NIS:
                                 </label>
-                                <input type="text" id="namaJalur"
+                                <input type="number" id="NIS"
                                     class="bg-transparent border border-[var(--txt-primary)]/30 text-[var(--txt-primary)] text-md rounded-lg focus:ring-[var(--bg-primary2)] focus:border-[var(--bg-primary2)] block w-full p-2 ps-3"
-                                    placeholder="Masukkan Nama Jalur" required />
+                                    placeholder="Masukkan NIS" required />
                             </div>
                             <div class="mb-4">
-                                <label for="kuotaJalur"
+                                <label for="jenisDokumen"
                                     class="block mb-2 text-lg font-medium text-[var(--txt-primary)]">
-                                    Kuota Jalur:
+                                    Jenis Dokumen:
                                 </label>
-                                <input type="number" id="kuotaJalur"
+                                <input type="number" id="jenisDokumen"
                                     class="bg-transparent border border-[var(--txt-primary)]/30 text-[var(--txt-primary)] text-md rounded-lg focus:ring-[var(--bg-primary2)] focus:border-[var(--bg-primary2)] block w-full p-2 ps-3"
-                                    placeholder="Masukkan Kuota Jalur" required />
+                                    placeholder="Masukkan Jenis Dokumen" required />
+                            </div>
+                            <div class="mb-4">
+                                <label for="filePath" class="block mb-2 text-lg font-medium text-[var(--txt-primary)]">
+                                    File Path:
+                                </label>
+                                <input type="file" id="filePath" name="filePath"
+                                    class="mt-2 block w-full text-sm text-[var(--txt-primary)] border border-[var(--txt-primary)]/30 rounded-lg cursor-pointer bg-transparent focus:outline-none focus:ring-1 focus:ring-[var(--bg-primary2)] focus:border-[var(--bg-primary2)]">
+                            </div>
+                            <div class="mb-4">
+                                <label for="tanggalUpload"
+                                    class="block mb-2 text-lg font-medium text-[var(--txt-primary)]">
+                                    Tanggal Upload
+                                </label>
+                                <input type="date" id="tanggalUpload"
+                                    class="bg-transparent border border-[var(--txt-primary)]/30 text-[var(--txt-primary)] text-md rounded-lg focus:ring-[var(--bg-primary2)] focus:border-[var(--bg-primary2)] block w-full p-2 ps-3"
+                                    placeholder="Masukkan Tanggal Upload" required />
+                            </div>
+                            <div class="mb-4">
+                                <label for="catatan" class="block mb-2 text-lg font-medium text-[var(--txt-primary)]">
+                                    Catatan
+                                </label>
+                                <input type="text" id="catatan"
+                                    class="bg-transparent border border-[var(--txt-primary)]/30 text-[var(--txt-primary)] text-md rounded-lg focus:ring-[var(--bg-primary2)] focus:border-[var(--bg-primary2)] block w-full p-2 ps-3"
+                                    placeholder="Masukkan Catatan" required />
                             </div>
                             <div class="flex items-center justify-end mt-8">
                                 <button data-modal-hide="modalTambah" type="button"
@@ -374,7 +398,7 @@
                     <div
                         class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-[var(--txt-primary)]/50">
                         <h3 class="text-xl font-semibold text-[var(--txt-primary)]">
-                            Ubah Data Kuota Jalur
+                            Ubah Data Dokumen
                         </h3>
                         <button type="button"
                             class="text-[var(--txt-primary)]/50 bg-transparent hover:bg-[var(--bg-primary2)]/20 hover:text-[var(--txt-primary)] rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center hover:cursor-pointer"
@@ -391,29 +415,56 @@
                     <div class="p-4 md:p-5 space-y-3">
                         <form class="w-full">
                             <div class="mb-4">
-                                <label for="id_jalur" class="block mb-2 text-lg font-medium text-[var(--txt-primary)]">
-                                    id_jalur
-                                </label>
-                                <input type="number" id="id_jalur"
-                                    class="bg-[var(--bg-primary2)]/20 hover:bg-[var(--bg-primary2)]/30 border border-[var(--txt-primary)]/30 text-[var(--txt-primary)] text-md rounded-lg focus:ring-[var(--bg-primary2)] focus:border-[var(--bg-primary2)] block w-full p-2 ps-3 cursor-not-allowed"
-                                    placeholder="Id Jalur" required disabled value="1" />
-                            </div>
-                            <div class="mb-4">
-                                <label for="namaJalur" class="block mb-2 text-lg font-medium text-[var(--txt-primary)]">
-                                    Nama Jalur:
-                                </label>
-                                <input type="text" id="namaJalur"
-                                    class="bg-transparent border border-[var(--txt-primary)]/30 text-[var(--txt-primary)] text-md rounded-lg focus:ring-[var(--bg-primary2)] focus:border-[var(--bg-primary2)] block w-full p-2 ps-3"
-                                    placeholder="Masukkan Nama Jalur" required value="Reguler" />
-                            </div>
-                            <div class="mb-4">
-                                <label for="kuotaJalur"
+                                <label for="id_dokumen"
                                     class="block mb-2 text-lg font-medium text-[var(--txt-primary)]">
-                                    Kuota Jalur:
+                                    id_dokumen:
                                 </label>
-                                <input type="number" id="kuotaJalur"
+                                <input type="number" id="id_dokumen"
+                                    class="bg-[var(--bg-primary2)]/20 hover:bg-[var(--bg-primary2)]/30 border border-[var(--txt-primary)]/30 text-[var(--txt-primary)] text-md rounded-lg focus:ring-[var(--bg-primary2)] focus:border-[var(--bg-primary2)] block w-full p-2 ps-3 cursor-not-allowed"
+                                    placeholder="id_dokumen" required value="1" disabled />
+                            </div>
+                            <div class="mb-4">
+                                <label for="NIS" class="block mb-2 text-lg font-medium text-[var(--txt-primary)]">
+                                    NIS:
+                                </label>
+                                <input type="number" id="NIS"
                                     class="bg-transparent border border-[var(--txt-primary)]/30 text-[var(--txt-primary)] text-md rounded-lg focus:ring-[var(--bg-primary2)] focus:border-[var(--bg-primary2)] block w-full p-2 ps-3"
-                                    placeholder="Masukkan Kuota Jalur" required value="500" />
+                                    placeholder="Masukkan NIS" required value="1234567890" />
+                            </div>
+                            <div class="mb-4">
+                                <label for="jenisDokumen"
+                                    class="block mb-2 text-lg font-medium text-[var(--txt-primary)]">
+                                    Jenis Dokumen:
+                                </label>
+                                <input type="number" id="jenisDokumen"
+                                    class="bg-transparent border border-[var(--txt-primary)]/30 text-[var(--txt-primary)] text-md rounded-lg focus:ring-[var(--bg-primary2)] focus:border-[var(--bg-primary2)] block w-full p-2 ps-3"
+                                    placeholder="Masukkan Jenis Dokumen" required value="Foto Pas 3x4" />
+                            </div>
+                            <div class="mb-4">
+                                <label for="filePath" class="block mb-2 text-lg font-medium text-[var(--txt-primary)]">
+                                    File Path:
+                                </label>
+                                <input type="file" id="filePath" name="filePath"
+                                    class="mt-2 block w-full text-sm text-[var(--txt-primary)] border border-[var(--txt-primary)]/30 rounded-lg cursor-pointer bg-transparent focus:outline-none focus:ring-1 focus:ring-[var(--bg-primary2)] focus:border-[var(--bg-primary2)]"
+                                    required value="PNG">
+                            </div>
+                            <div class="mb-4">
+                                <label for="tanggalUpload"
+                                    class="block mb-2 text-lg font-medium text-[var(--txt-primary)]">
+                                    Tanggal Upload
+                                </label>
+                                <input type="date" id="tanggalUpload"
+                                    class="bg-transparent border border-[var(--txt-primary)]/30 text-[var(--txt-primary)] text-md rounded-lg focus:ring-[var(--bg-primary2)] focus:border-[var(--bg-primary2)] block w-full p-2 ps-3"
+                                    placeholder="Masukkan Tanggal Upload" required value="5 Januari 2025" />
+                            </div>
+                            <div class="mb-4">
+                                <label for="catatan" class="block mb-2 text-lg font-medium text-[var(--txt-primary)]">
+                                    Catatan
+                                </label>
+                                <input type="text" id="catatan"
+                                    class="bg-transparent border border-[var(--txt-primary)]/30 text-[var(--txt-primary)] text-md rounded-lg focus:ring-[var(--bg-primary2)] focus:border-[var(--bg-primary2)] block w-full p-2 ps-3"
+                                    placeholder="Masukkan Catatan" required
+                                    value="Lorem Ipsum Dolor sit Amet Consectur Lorem Ipsum Dolor sit Amet Consectur Lorem Ipsum Dolor sit Amet Consectur" />
                             </div>
                             <div class="flex items-center justify-end mt-8">
                                 <button data-modal-hide="modalUbah" type="button"
