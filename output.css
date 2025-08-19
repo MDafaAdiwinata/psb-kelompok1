@@ -13,6 +13,8 @@
     --color-red-600: oklch(57.7% 0.245 27.325);
     --color-red-700: oklch(50.5% 0.213 27.518);
     --color-red-800: oklch(44.4% 0.177 26.899);
+    --color-green-500: oklch(72.3% 0.219 149.579);
+    --color-green-600: oklch(62.7% 0.194 149.214);
     --color-emerald-50: oklch(97.9% 0.021 166.113);
     --color-emerald-600: oklch(59.6% 0.145 163.225);
     --color-sky-50: oklch(97.7% 0.013 236.62);
@@ -1316,6 +1318,9 @@
   .text-gray-900 {
     color: var(--color-gray-900);
   }
+  .text-green-600 {
+    color: var(--color-green-600);
+  }
   .text-indigo-600 {
     color: var(--color-indigo-600);
   }
@@ -1440,6 +1445,13 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         color: var(--color-gray-900);
+      }
+    }
+  }
+  .hover\:ms-2 {
+    &:hover {
+      @media (hover: hover) {
+        margin-inline-start: calc(var(--spacing) * 2);
       }
     }
   }
@@ -1748,6 +1760,14 @@
       @media (hover: hover) {
         --tw-gradient-position: to bottom right in oklab;
         background-image: linear-gradient(var(--tw-gradient-stops));
+      }
+    }
+  }
+  .hover\:font-medium {
+    &:hover {
+      @media (hover: hover) {
+        --tw-font-weight: var(--font-weight-medium);
+        font-weight: var(--font-weight-medium);
       }
     }
   }
@@ -2692,6 +2712,11 @@
   .dark\:text-gray-300 {
     @media (prefers-color-scheme: dark) {
       color: var(--color-gray-300);
+    }
+  }
+  .dark\:text-green-500 {
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-green-500);
     }
   }
   .dark\:text-red-500 {
