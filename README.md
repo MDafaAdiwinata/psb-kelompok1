@@ -49,7 +49,6 @@ Dengan antarmuka yang sederhana dan responsif, website ini dapat diakses melalui
 6. Logout
 
 ---
----
 
 ### FITUR ADMIN
 
