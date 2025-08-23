@@ -79,7 +79,5 @@ Dengan antarmuka yang sederhana dan responsif, website ini dapat diakses melalui
 
 > [!NOTE]
 > Untuk setiap kali merunning file project ini, selalu awali dengan menjalankan perintah di bawah ini di terminal (Git Bash/PowerShell/CMD) di dalam project* supaya customisasi TailwindCSS berjalan dan sesuai.
-### 1. Kompilasi Program
-Gunakan compiler C++ seperti `g++`:
 ```bash
 npx @tailwindcss/cli -i ./input.css -o ./output.css --watch
