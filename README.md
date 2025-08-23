@@ -49,6 +49,18 @@ Dengan antarmuka yang sederhana dan responsif, website ini dapat diakses melalui
 6. Logout
 
 ---
+---
+
+### FITUR ADMIN
+
+1.	Login Account
+2.	Melihat Dashboard (Statistik Data – Pendaftar & Akun Pendaftar)
+3.	Daftar Akun (CRUD) – Search Data
+4.	Daftar Siswa (CRUD) – Search Data
+5.	Daftar Kuota Jalur (CRUD) – Search Data
+6.	Daftar Dokumen (CRUD) – Search Data
+
+---
 
 ### TEKNOLOGI YANG DIGUNAKAN
 
@@ -67,4 +79,7 @@ Dengan antarmuka yang sederhana dan responsif, website ini dapat diakses melalui
 
 > [!NOTE]
 > Untuk setiap kali merunning file project ini, selalu awali dengan menjalankan perintah di bawah ini di terminal (Git Bash/PowerShell/CMD) di dalam project* supaya customisasi TailwindCSS berjalan dan sesuai.
-<pre>npx @tailwindcss/cli -i ./input.css -o ./output.css --watch</pre>
+### 1. Kompilasi Program
+Gunakan compiler C++ seperti `g++`:
+```bash
+npx @tailwindcss/cli -i ./input.css -o ./output.css --watch
