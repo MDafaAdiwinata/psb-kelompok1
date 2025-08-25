@@ -649,6 +649,9 @@
   .justify-start {
     justify-content: flex-start;
   }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -669,6 +672,12 @@
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
+  }
+  .gap-19 {
+    gap: calc(var(--spacing) * 19);
+  }
+  .gap-89 {
+    gap: calc(var(--spacing) * 89);
   }
   .space-y-2 {
     :where(& > :not(:last-child)) {
@@ -1998,6 +2007,11 @@
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
+    }
+  }
+  .md\:gap-0 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 0);
     }
   }
   .md\:gap-6 {
